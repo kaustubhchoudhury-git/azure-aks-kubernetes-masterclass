@@ -25,7 +25,7 @@ Kalyans-Mac-mini:~ kalyanreddy$ az aks create --resource-group ${AKS_RESOURCE_GR
 >               --enable-addons monitoring \
 >               --workspace-resource-id ${AKS_MONITORING_LOG_ANALYTICS_WORKSPACE_ID} \
 >               --enable-ahub \
->               --zones 3
+>               --zones {1,2,3}
 
 
 The cluster is an MSI cluster, please manually grant Network Contributor role to the system assigned identity after the cluster is created, see https://docs.microsoft.com/en-us/azure/aks/use-managed-identity
